@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "Home Services Booking API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List services",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/services"
+      }
+    },
+    {
+      "name": "Search services",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/services?search=clean"
+      }
+    },
+    {
+      "name": "Service details (id 1)",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/services/1"
+      }
+    },
+    {
+      "name": "Create booking",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"serviceId\": 1,\n  \"name\": \"Aarav Sharma\",\n  \"phone\": \"9876543210\",\n  \"address\": \"Pune, Maharashtra\",\n  \"date\": \"2026-10-17\",\n  \"timeSlot\": \"10:00 AM - 12:00 PM\"\n}"
+        },
+        "url": "http://localhost:8080/api/bookings"
+      }
+    },
+    {
+      "name": "List bookings",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/bookings"
+      }
+    }
+  ]
+}
