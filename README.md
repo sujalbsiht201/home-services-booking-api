@@ -41,5 +41,4 @@ Example booking request:
 }
 ```
 
-## Important assignment note
-The assignment calls the listing endpoint “My Bookings” but does not define login/authentication or a user identifier. This starter therefore returns all bookings. Explain this assumption in your submission, or add user identity/authentication if the recruiter clarifies the requirement. Review, run, and understand the code yourself before submitting.
+
